@@ -1,0 +1,84 @@
+@import "tailwindcss/tailwind.css";
+@import "flowbite";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+.active-link{
+  color: black;
+  background-color: white;
+}
+
+.navbar {
+  position: fixed; /* Ensure it's fixed to the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: top 0.3s; /* Smooth transition */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar-hidden {
+  top: -100px; 
+}
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.main-text-color {
+  color: #033b63;
+}
+.main-bg {
+  background-color: #033b63;
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  margin-top: 58px;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+  z-index: 2;
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  /* padding: 20px;  */
+  padding-left: 10%;
+  padding-bottom: 20px;
+  width: 80%;
+}

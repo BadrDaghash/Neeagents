@@ -13,7 +13,6 @@ export default function Navbar() {
   const location = useLocation();
 
   useEffect(() => {
-    // Reset active link based on current path
     if (location.pathname === "/") {
       setActiveLink('');
     }
@@ -55,7 +54,7 @@ export default function Navbar() {
     scroller.scrollTo(section, {
       smooth: true,
       duration: 500,
-      offset: -70, // Adjust offset if necessary
+      offset: -70, 
     });
     handleSetActive(section);
   };
